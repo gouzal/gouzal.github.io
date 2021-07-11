@@ -12,14 +12,15 @@
 
     <title>Document</title>
 </head>
-<body >
+<body  style="padding-top: 50px;">
     
-<div class="card border-primary mb-3" style="max-width: 50rem;">
-    <div class="card-header">Header</div>
+<div class="card border-primary mb-3" style="max-width: 70rem; margin: auto; " >
+    <div class="card-header" >Header</div>
     <div class="card-body">
       <h4 class="card-title">Primary card title</h4>
       <div class="card-text">
         <div class="jumbotron" style="align-content: center; align-items: center; text-align: center;">
+            <img src="icons/me.jpg" alt=""/>
             <h1 class="display-4">Hi! I am Larbi Gouzal</h1>
             <p class="lead">Software developer </p>
             <hr class="my-4">
@@ -32,29 +33,56 @@
 
         </div>
         <div style="text-align: center;">
-            <a href="">
-                <img src="icons/likedin.png" width="32" height="32" alt="linkedin"/>
+            <a href="" class="img">
+                <img src="icons/likedin.png" width="42" height="42" alt="linkedin" />
+                <img src="icons/likedin2.png" width="42" height="42" alt="linkedin" class="top"/>
             </a>
-            <a href="">
-                <img src="icons/github.png" width="32" height="32" alt="github"/>
+            <a href="" class="img">
+                <img src="icons/youtube.png" width="42" height="42" alt="linkedin" />
+                <img src="icons/youtube2.png" width="42" height="42" alt="linkedin" class="top"/>
             </a>
-            <a href="">
-                <img src="icons/youtube.png" width="32" height="32" alt=""/>
+            <a href="" class="img">
+                <img src="icons/github.png" width="42" height="42" alt="linkedin" />
+                <img src="icons/github2.png" width="42" height="42" alt="linkedin" class="top"/>
             </a>
-            <a href="">
-                <img src="icons/instagram.png" alt="" width="32" height="32"/>
+            <a href="" class="img">
+                <img src="icons/instagram.png" width="42" height="42" alt="linkedin" />
+                <img src="icons/instagram2.png" width="42" height="42" alt="linkedin" class="top"/>
             </a>
-            <a href="">
-                <img src="icons/goodreads.png" alt="" width="32" height="32" />
+            <a href="" class="img">
+                <img src="icons/goodreads.png" width="42" height="42" alt="linkedin" />
+                <img src="icons/goodreads2.png" width="42" height="42" alt="linkedin" class="top"/>
             </a>
-            <a href="">
-                <img src="icons/ebook.png" alt="" width="32" height="32" />
+            <a href="" class="img">
+                <img src="icons/ebook.png" width="42" height="42" alt="linkedin" />
+                <img src="icons/ebook2.png" width="42" height="42" alt="linkedin" class="top"/>
             </a>
         </div>
         </div>
     </div>
   </div>
 
+<style>
+    .img{
+        position: relative;
+        display: inline-block;
+    }
+    .img .top{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .img:hover .top {
+        display: inline;
+    }
+    .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+</style>
 </body>
 </html>
